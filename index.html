@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--------------------------------------------
+ * Assignment 1 - See n' Say Storymaker      *
+ * COMP1073 - Client-Side JavaScript         *
+ * Oct. 15th 2023                            *
+ * Jacob Chotenovsky                         *
+ * 200545482                                 *
+ ----------------------------------------------->
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,12 +17,101 @@
 
 <body>
 	<div>
-		<button id="btn1">1. A Noun</button>
-		<button id="btn2">2. A Verb</button>
-		<button id="btn3">3. An Adjective</button>
-		<button id="btn4">4. Another Noun</button>
-		<button id="btn5">5. A Place</button>
-		<button id="btnSubmit">Submit</button>
+		<section class="options">
+			<!-- Below are the 5 buttons which make a sentence -->
+			<div class="choice first-noun">
+				<button id="btn1">1. A Noun</button>
+				<img src="./images/first/turkey.png" alt="Picture of a Turkey">
+				<p>The Turkey</p>
+				<img src="./images/first/mom.png" alt="Picture of a Mom">
+				<p>Mom</p>
+				<img src="./images/first/dad.png" alt="Picture of a Dad">
+				<p>Dad</p>
+				<img src="./images/first/dog.png" alt="Picture of a Dog">
+				<p>The Dog</p>
+				<img src="./images/first/teacher.png" alt="Picture of a Teacher">
+				<p>My Teacher</p>
+				<img src="./images/first/elephant.png" alt="Picture of an Elephant">
+				<p>The Elephant</p>
+				<img src="./images/first/cat.png" alt="Picture of a Cat">
+				<p>The Cat</p>
+			</div>
+			<div class="choice second-verb">
+				<button id="btn2">2. A Verb</button>
+				<img src="./images/second/sat-on.jpg" alt="Picture of sitting on something">
+				<p>sat on</p>
+				<img src="./images/second/ate.png" alt="Picture of eating something">
+				<p>ate</p>
+				<img src="./images/second/dance.png" alt="Picture of Dancing">
+				<p>danced with</p>
+				<img src="./images/second/saw.png" alt="Picture of looking at something">
+				<p>saw</p>
+				<img src="./images/second/doesnt-like.png" alt="Picture of not liking something">
+				<p>doesn't like</p>
+				<img src="./images/second/kiss.jpg" alt="Picture of kissing">
+				<p>kissed</p>
+			</div>
+			<div class="choice third-adjective">
+				<button id="btn3">3. An Adjective</button>
+				<img src="./images/third/funny.png" alt="Picture describing the feeling of funny">
+				<p>a funny</p>
+				<img src="./images/third/scary.png" alt="Picture describing the feeling of scary">
+				<p>a scary</p>
+				<img src="./images/third/goofy.png" alt="Picture of Goofy to describe the feeling of goofy">
+				<p>a goofy</p>
+				<img src="./images/third/slime.png" alt="Picture of slime">
+				<p>a slimy</p>
+				<img src="./images/third/bark.png" alt="Picture of barking">
+				<p>a barking</p>
+				<img src="./images/third/fat.png" alt="Picture of a fat cat">
+				<p>a fat</p>
+			</div>
+			<div class="choice fourth-noun">
+				<button id="btn4">4. Another Noun</button>
+				<img src="./images/fourth/goat.png" alt="Picture of a goat">
+				<p>goat</p>
+				<img src="./images/fourth/monkey.png" alt="Picture of a monkey">
+				<p>monkey</p>
+				<img src="./images/fourth/fish.png" alt="Picture of a fish">
+				<p>fish</p>
+				<img src="./images/fourth/cow.png" alt="Picture of a cow">
+				<p>cow</p>
+				<img src="./images/fourth/frog.png" alt="Picture of a frog">
+				<p>frog</p>
+				<img src="./images/fourth/bug.png" alt="Picture of a bug">
+				<p>bug</p>
+				<img src="./images/fourth/worm.png" alt="Picture of a worm">
+				<p>worm</p>
+			</div>
+			<div class="choice fifth-place">
+				<button id="btn5">5. A Place</button>
+				<img src="./images/fifth/moon.png" alt="Picture of a moon">
+				<p>on the moon</p>
+				<img src="./images/fifth/chair.png" alt="Picture of a chair">
+				<p>on the chair</p>
+				<img src="./images/fifth/spaghetti.png" alt="Picture of spaghetti">
+				<p>in my spaghetti</p>
+				<img src="./images/fifth/soup.png" alt="Picture of soup">
+				<p>in my soup</p>
+				<img src="./images/fifth/grass.png" alt="Picture of grass">
+				<p>on the grass</p>
+				<img src="./images/fifth/shoes.png" alt="Picture of shoes">
+				<p>in my shoes</p>
+			</div>
+		</section>
+		<section class="results">
+			<p>Current Sentence:</p>
+			<p id="outputText"></p>
+			<div class="container-submit">
+				<!-- This button randomly generates a sentence to be read -->
+				<button id="btnRandom">Generate Random Story</button>
+				<!-- This button resets the sentence back to nothing -->
+				<button id="btnReset">Reset Story</button>
+				<!--This is the submit button to play the created sentence -->
+				<button id="btnSubmit">Submit Story</button>
+			</div>
+		</section>
+		<!-- This is the javascript which enables the whole app to work -->
 		<script src="js/app.js"></script>
 	</div>
 </body>

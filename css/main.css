@@ -1,2 +1,71 @@
 @charset "utf-8";
-/* Assignment 1 | COMP1073 Client-Side JavaScript */
+/*********************************************
+ * Assignment 1 - See n' Say Storymaker      *
+ * COMP1073 - Client-Side JavaScript         *
+ * Oct. 15th 2023                            *
+ * Jacob Chotenovsky                         *
+ * 200545482                                 *
+ *********************************************/
+body {
+    background: yellow;
+}
+
+body>div {
+    margin: 5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+img {
+    width: 10vw;
+}
+
+.options {
+    display: flex;
+}
+
+.choice {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vw;
+}
+
+.choice button {
+    margin-bottom: 3vw;
+}
+
+.choice p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.first-noun {
+    grid-column: 1/2;
+    background: #7f047f;
+}
+
+.second-verb {
+    grid-column: 2/3;
+    background: #4580e8;
+}
+
+.third-adjective {
+    grid-column: 3/4;
+    background: #ff0000;
+}
+
+.fourth-noun {
+    grid-column: 4/5;
+    background: #ffa300;
+}
+
+.fifth-place {
+    grid-column: 5/6;
+    background: #be0c6c;
+}
+
+.results {
+    grid-column: 6/7;
+
+}
